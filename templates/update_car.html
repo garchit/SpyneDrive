@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Car - SpyneDrive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+<!-- Main Container -->
+<div class="container mx-auto p-5">
+
+    <!-- Car Details Header -->
+    <div class="text-center mb-10">
+        <h2 class="text-4xl font-semibold text-gray-800">Update Car Details</h2>
+        <p class="text-lg text-gray-500">Update the details of your car, including images.</p>
+    </div>
+
+    <!-- Flash Messages -->
+   
+
+    <!-- Update Car Form -->
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Car Information</h3>
+        <form action="{{ url_for('update_car', user_id=user_id, car_id=car.car_id) }}" method="POST" class="space-y-4">
+            
+            <!-- Make Input -->
+            <div class="flex flex-col">
+                <label for="make" class="text-lg text-gray-700">Car Make</label>
+                <input type="text" id="make" name="make" value="{{ car.make }}" class="mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            
+            <!-- Model Input -->
+            <div class="flex flex-col">
+                <label for="model" class="text-lg text-gray-700">Car Model</label>
+                <input type="text" id="model" name="model" value="{{ car.model }}" class="mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            
+            <!-- Year Input -->
+            <div class="flex flex-col">
+                <label for="year" class="text-lg text-gray-700">Car Year</label>
+                <input type="number" id="year" name="year" value="{{ car.year }}" class="mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            
+            <!-- License Plate Input -->
+            <div class="flex flex-col">
+                <label for="license_plate" class="text-lg text-gray-700">License Plate</label>
+                <input type="text" id="license_plate" name="license_plate" value="{{ car.license_plate }}" class="mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+            </div>
+
+            <!-- Add New Images -->
+            <!-- <div class="flex flex-col mt-4">
+                <label for="image_urls" class="text-lg text-gray-700">Add Image URLs (Max 10)</label>
+                <input type="text" name="image_urls" placeholder="Enter image URL" class="mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                <small class="text-gray-500">You can add multiple images separated by commas.</small>
+            </div> -->
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200">Update Car</button>
+        </form>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
