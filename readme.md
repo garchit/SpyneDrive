@@ -9,7 +9,7 @@ A car management web application built with Flask, SQLAlchemy, and Bootstrap, al
 - [Project Structure](#project-structure)
 - [Features](#features)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
+
 - [Contributing](#contributing)
 - [License](#license)
 
