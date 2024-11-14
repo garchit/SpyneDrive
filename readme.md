@@ -40,21 +40,22 @@ A car management web application built with Flask, SQLAlchemy, and Bootstrap, al
 ## Project Structure
 
     SpyneDrive/
-├── app/
-│   ├── __init__.py            # Initialize Flask app and database
-│   ├── models.py              # Define database models
-│   ├── routes.py              # Define app routes and logic
-│   ├── templates/             # HTML templates
-│   │   ├── base.html          # Base template with common structure
-│   │   ├── login.html         # Login page template
-│   │   ├── add_new_car.html   # Form for adding a new car
-│   │   └── detailed_car.html  # Page to view car details and manage images
-│   └── static/                # Static assets (CSS, JS, Images)
-├── migrations/                # Database migrations
-├── config.py                  # Configuration settings
-├── README.md                  # Project documentation
-├── requirements.txt           # Python package requirements
-└── run.py                     # Application entry point
+    ```bash
+    ├── app/
+    │   ├── __init__.py            # Initialize Flask app and database
+    │   ├── models.py              # Define database models
+    │   ├── routes.py              # Define app routes and logic
+    │   ├── templates/             # HTML templates
+    │   │   ├── base.html          # Base template with common structure
+    │   │   ├── login.html         # Login page template
+    │   │   ├── add_new_car.html   # Form for adding a new car
+    │   │   └── detailed_car.html  # Page to view car details and manage images
+    │   └── static/                # Static assets (CSS, JS, Images)
+    ├── migrations/                # Database migrations
+    ├── config.py                  # Configuration settings
+    ├── README.md                  # Project documentation
+    ├── requirements.txt           # Python package requirements
+    └── run.py                     # Application entry point
 
 ## Features
 
